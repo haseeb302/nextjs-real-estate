@@ -40,7 +40,7 @@ export default function ImageScrollbar ({ data }) {
     return ( 
         <ScrollMenu LeftArrow={LeftArrow} RightArrow={RightArrow} style={{ overflow: 'hidden' }}>
             {data.map((item) => (
-                <Box width="910px" itemId={item.id} overflow="hidden" p="1">
+                <Box width="910px" itemId={item.id} overflow="hidden" p="1" key={item.id}>
                     <Image 
                         placeholder="blur" 
                         blurDataURL={item.url} 
